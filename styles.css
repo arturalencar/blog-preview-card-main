@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --dark-yellow: hsl(47, 98%, 45%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--yellow);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    margin: auto;
+    background-color: var(--white);
+    width: 21rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--gray-950);
+    box-shadow: 0.5rem 0.5rem var(--gray-950);
+}
+
+.image-container {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.tag-container {
+    padding: 0.8rem 0;
+}
+
+.status-tag {
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.3em;
+    color: var(--gray-950);
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.tag-container p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.text-container {
+    display: grid;
+    gap: 0.5rem;
+    padding-bottom: 1.2rem;
+}
+
+.text-container h1 {
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--gray-950);
+}
+
+.text-container h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.text-container p {
+    font-size: 14px;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+.avatar-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: 2rem;
+    padding: 1.2rem 0 1rem 0;
+}
+
+.avatar-image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.avatar-name {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--gray-950);
+}
+
+footer {
+    background-color: var(--dark-yellow);
+    width: 100vw;
+    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+}
+
+.attribution {
+    font-size: 12px; text-align: center;
+}
+
+.attribution a {
+    color: var(--gray-500);
+}
+
+.attribution a:hover {
+    color: var(--gray-950);
+}
